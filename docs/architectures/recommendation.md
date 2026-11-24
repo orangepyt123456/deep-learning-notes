@@ -10,7 +10,7 @@
 
 先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
 
-```mermaid
+```arbor-tree
 mindmap
   root((推荐系统与 CTR 模型))
     1. 概述
@@ -116,7 +116,7 @@ Embedding 表规模可达 TB 级（如用户数亿 × Embedding 维度 64），�
 ### 3.1 演进路线
 
 <!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title 深度 CTR 模型演进
     2010 : LR 与 FM 记住特征组合

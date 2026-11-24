@@ -10,7 +10,7 @@
 
 先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
 
-```mermaid
+```arbor-tree
 mindmap
   root((SayCan：把语言模型 grou…))
     论文速览

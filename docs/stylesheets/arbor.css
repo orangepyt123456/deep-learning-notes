@@ -1,0 +1,153 @@
+.arbor-stage,
+.arbor-time {
+  margin: 1.2rem 0 1.8rem;
+  border: 1px solid var(--arbor-line, #d5e0da);
+  border-radius: 18px;
+  background: var(--arbor-paper, #f4f7f4);
+  color: var(--arbor-ink, #1c2b26);
+}
+
+.arbor-stage {
+  position: relative;
+  height: 460px;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+}
+
+.arbor-stage:active {
+  cursor: grabbing;
+}
+
+.arbor-stage canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.arbor-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 9.5rem;
+  padding: 0.05rem 0.35rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--arbor-paper, #f4f7f4) 82%, transparent);
+  color: var(--arbor-ink, #1c2b26);
+  font-size: 0.72rem;
+  line-height: 1.35;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  pointer-events: auto;
+  cursor: pointer;
+  user-select: none;
+}
+
+.arbor-caption,
+.arbor-kicker,
+.arbor-time-note {
+  margin: 0;
+  color: var(--arbor-muted, #5e6e68);
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.arbor-caption {
+  position: absolute;
+  left: 1rem;
+  top: 0.75rem;
+  z-index: 2;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  pointer-events: none;
+}
+
+.arbor-time {
+  padding: 1.4rem 1.4rem 0.6rem;
+}
+
+.arbor-kicker {
+  margin-bottom: 0.35rem;
+}
+
+.arbor-time-title {
+  margin: 0 0 0.35rem;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", "Noto Serif SC", serif;
+  font-size: 1.7rem;
+  font-weight: 560;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.arbor-time-note {
+  margin-bottom: 1.1rem;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.arbor-year {
+  display: grid;
+  grid-template-columns: 5.2rem 1fr;
+  gap: 0.8rem;
+  padding: 0.15rem 0 0.9rem;
+}
+
+.arbor-year-label {
+  font-family: "Iowan Old Style", "Palatino Linotype", "Songti SC", "Noto Serif SC", serif;
+  font-size: 1.35rem;
+  line-height: 1.4;
+  color: var(--arbor-year, #16382f);
+}
+
+.arbor-events {
+  margin: 0;
+  padding: 0 0 0 1rem;
+  list-style: none;
+  border-left: 1px solid var(--arbor-line, #d5e0da);
+}
+
+.arbor-events li {
+  position: relative;
+  padding: 0.55rem 0 0.7rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--arbor-line, #d5e0da) 80%, transparent);
+}
+
+.arbor-events li:last-child {
+  border-bottom: 0;
+}
+
+.arbor-events .dot {
+  position: absolute;
+  left: -1.28rem;
+  top: 0.85rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: var(--dot, #1f8a78);
+}
+
+.arbor-events strong {
+  font-weight: 650;
+}
+
+[data-md-color-scheme="slate"] {
+  --arbor-paper: #1b2420;
+  --arbor-ink: #e7eee9;
+  --arbor-muted: #9aada4;
+  --arbor-line: #31423b;
+  --arbor-year: #d5ebe3;
+}
+
+@media (max-width: 720px) {
+  .arbor-stage {
+    height: 380px;
+  }
+
+  .arbor-year {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}

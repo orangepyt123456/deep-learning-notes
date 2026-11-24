@@ -10,7 +10,7 @@
 
 先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
 
-```mermaid
+```arbor-tree
 mindmap
   root((图神经网络 GNN))
     1 概述：为什么需要 GNN

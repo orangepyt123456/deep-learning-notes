@@ -10,7 +10,7 @@
 
 先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
 
-```mermaid
+```arbor-tree
 mindmap
   root((Sim-to-Real 与仿真器))
     1 为什么需要 Sim-to-Real

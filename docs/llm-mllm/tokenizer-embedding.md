@@ -10,7 +10,7 @@
 
 先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
 
-```mermaid
+```arbor-tree
 mindmap
   root((分词与词嵌入详解))
     1. 概述
@@ -378,7 +378,7 @@ model.set_output_embeddings(new_embed)  # weight tying
 ## 5. 词向量演进
 
 <!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title 词向量演进
     2013 : Word2Vec 用上下文预测得到静态词向量

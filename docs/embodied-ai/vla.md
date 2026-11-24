@@ -10,7 +10,7 @@
 
 先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
 
-```mermaid
+```arbor-tree
 mindmap
   root((VLA 模型：架构、动作表示与模型…))
     1 概述与定义
@@ -75,7 +75,7 @@ VLA 的核心承诺是：**互联网级预训练的知识（物体语义、物�
 ## 2 演进时间线 {#2}
 
 <!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title VLA 演进
     2022 : SayCan 与 RT-1

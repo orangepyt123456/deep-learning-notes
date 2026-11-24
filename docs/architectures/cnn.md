@@ -10,7 +10,7 @@
 
 先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
 
-```mermaid
+```arbor-tree
 mindmap
   root((卷积神经网络 CNN 详解))
     1. 基本概念
@@ -121,7 +121,7 @@ $$H_{out} = \left\lfloor\frac{H_{in} + 2P - k_h}{S}\right\rfloor + 1$$
 ## 3. 经典架构演进
 
 <!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title CNN 架构演进
     1998 : LeNet-5 确立卷积-池化-全连接

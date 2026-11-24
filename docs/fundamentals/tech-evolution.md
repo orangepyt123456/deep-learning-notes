@@ -10,7 +10,7 @@
 
 先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
 
-```mermaid
+```arbor-tree
 mindmap
   root((深度学习技术演进史（2012–20…))
     1 演进主线总览
@@ -73,7 +73,7 @@ flowchart LR
     F --> G["2026<br/>智能体工作流<br/>长上下文成本下降"]
 ```
 
-```mermaid
+```arbor-timeline
 timeline
     title 一条可以记住的主线
     2012 : AlexNet 把深度卷积做成可用系统

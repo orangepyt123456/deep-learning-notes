@@ -10,7 +10,7 @@
 
 先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
 
-```mermaid
+```arbor-tree
 mindmap
   root((视频生成))
     1 任务定义与挑战
@@ -166,7 +166,7 @@ Wan 2.1 的 VAE 在 256 倍压缩下仍保持高重建质量，是其能在 14B 
 ## 5 代表模型 {#5}
 
 <!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title 视频生成代表模型
     2024 : Sora 演示引起广泛关注

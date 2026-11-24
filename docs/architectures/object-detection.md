@@ -10,7 +10,7 @@
 
 先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
 
-```mermaid
+```arbor-tree
 mindmap
   root((目标检测详解))
     1. 概述
@@ -156,7 +156,7 @@ RoI Pooling 在将候选区域映射到固定尺寸特征时，会进行两次�
 ### 2.4 经典演进
 
 <!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title 两阶段检测的经典演进
     2014 : R-CNN 用候选框加 CNN

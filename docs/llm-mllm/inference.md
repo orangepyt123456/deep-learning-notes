@@ -10,7 +10,7 @@
 
 先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
 
-```mermaid
+```arbor-tree
 mindmap
   root((LLM 推理优化详解))
     1. 推理优化概述
@@ -128,7 +128,7 @@ $$\text{KV Cache 大小} = 2 \times \text{层数} \times n_{kv} \times \text{头
 ### 3.3 Flash Attention 版本演进
 
 <!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title Flash Attention
     2022 : v1 用分块和在线 softmax 避免写出整张注意力矩阵

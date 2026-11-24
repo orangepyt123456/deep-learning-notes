@@ -75,7 +75,7 @@ def mindmap_block(md: str) -> str | None:
         "<!-- chapter-mindmap -->\n"
         "## 本章导图\n\n"
         "先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。\n\n"
-        "```mermaid\n"
+        "```arbor-tree\n"
         f"{body}\n"
         "```\n"
     )
@@ -108,7 +108,7 @@ TIMELINES = {
     "docs/architectures/cnn.md": (
         "## 3. 经典架构演进",
         """<!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title CNN 架构演进
     1998 : LeNet-5 确立卷积-池化-全连接
@@ -125,7 +125,7 @@ timeline
     "docs/architectures/object-detection.md": (
         "### 2.4 经典演进",
         """<!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title 两阶段检测的经典演进
     2014 : R-CNN 用候选框加 CNN
@@ -140,7 +140,7 @@ timeline
     "docs/architectures/recommendation.md": (
         "### 3.1 演进路线",
         """<!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title 深度 CTR 模型演进
     2010 : LR 与 FM 记住特征组合
@@ -155,7 +155,7 @@ timeline
     "docs/architectures/video-generation.md": (
         "## 5 代表模型 {#5}",
         """<!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title 视频生成代表模型
     2024 : Sora 演示引起广泛关注
@@ -171,7 +171,7 @@ timeline
     "docs/llm-mllm/tokenizer-embedding.md": (
         "## 5. 词向量演进",
         """<!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title 词向量演进
     2013 : Word2Vec 用上下文预测得到静态词向量
@@ -185,7 +185,7 @@ timeline
     "docs/llm-mllm/post-training-survey.md": (
         "### 2.1 历史演化",
         """<!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title 后训练主线
     2018 : 预训练后做任务微调
@@ -199,7 +199,7 @@ timeline
     "docs/llm-mllm/inference.md": (
         "### 3.3 Flash Attention 版本演进",
         """<!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title Flash Attention
     2022 : v1 用分块和在线 softmax 避免写出整张注意力矩阵
@@ -211,7 +211,7 @@ timeline
     "docs/embodied-ai/vla.md": (
         "## 2 演进时间线 {#2}",
         """<!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title VLA 演进
     2022 : SayCan 与 RT-1
@@ -225,7 +225,7 @@ timeline
     "docs/embodied-ai/world-model.md": (
         "### 2.2 DreamerV1 → V2 → V3 演进",
         """<!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title Dreamer 系列
     2020 : DreamerV1 在隐空间里做强化学习

@@ -11,7 +11,7 @@
 
 先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
 
-```mermaid
+```arbor-tree
 mindmap
   root((大模型后训练（Post-Train…))
     0. 一句话理解整篇论文
@@ -131,7 +131,7 @@ $$
 ### 2.1 历史演化
 
 <!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title 后训练主线
     2018 : 预训练后做任务微调

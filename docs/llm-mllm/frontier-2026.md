@@ -8,7 +8,7 @@
 
 先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
 
-```mermaid
+```arbor-tree
 mindmap
   root((2026 前沿更新))
     这一年在改变什么
@@ -25,7 +25,7 @@ mindmap
 截止日期：2026 年 11 月 24 日。
 
 <!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title 2026 已核对的模型节点
     2026-03 : GPT-5.4

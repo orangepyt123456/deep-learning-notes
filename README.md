@@ -21,11 +21,9 @@
 
 这是一套系统化的深度学习笔记，覆盖从机器学习基础理论到 2026 年最新大模型技术的完整知识体系。项目旨在为深度学习学习者、研究者和工程师提供一份**结构清晰、内容详实、持续更新**的参考资料。
 
-作者：**chenrun**。
+内容核对到 2026 年 11 月，并带有划词白话、章节三维导图和时间线。
 
-笔记在 [CaoJiahao2/deep-learning-notes](https://github.com/CaoJiahao2/deep-learning-notes)（MIT）的基础上继续整理：核对并改正已确认的事实错误，把演进史补到 2026 年 11 月，加入划词白话，并在每个章节前放上思维导图、在有时间线的章节补上时间线图。
-
-在线阅读地址将是 <https://orangepyt123456.github.io/deep-learning-notes/> 。
+在线阅读：<https://orangepyt123456.github.io/deep-learning-notes/> 。
 
 ### 核心理念
 
@@ -149,8 +147,6 @@ mkdocs build --strict
 ### 贡献者
 
 感谢所有为本项目做出贡献的开发者！
-
-作者：chenrun
 
 <a href="https://github.com/orangepyt123456/deep-learning-notes/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=orangepyt123456/deep-learning-notes" alt="Contributors" />

@@ -10,7 +10,7 @@
 
 先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
 
-```mermaid
+```arbor-tree
 mindmap
   root((世界模型 World Model))
     1 概念与目标
@@ -104,7 +104,7 @@ o_t ──► encoder ──► 拼接 ──► RSSM ──► h_t ──► de
 ### 2.2 DreamerV1 → V2 → V3 演进
 
 <!-- chapter-timeline -->
-```mermaid
+```arbor-timeline
 timeline
     title Dreamer 系列
     2020 : DreamerV1 在隐空间里做强化学习
