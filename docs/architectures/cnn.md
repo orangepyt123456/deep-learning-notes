@@ -4,41 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((卷积神经网络 CNN 详解))
-    1. 基本概念
-      1.1 为什么需要 CNN
-      1.2 核心思想
-    2. 核心组件
-      2.1 卷积层（Convolutional Layer）
-      2.2 池化层（Pooling Layer）
-      2.3 激活函数
-      2.4 全连接层（Fully Connected Layer）
-    3. 经典架构演进
-      3.1 LeNet-5 1998
-      3.2 AlexNet 2012
-      3.3 VGG 2014
-      3.4 GoogLeNet / Inception 2014
-    4. 现代设计原则
-      4.1 卷积核选择
-      4.2 深度可分离卷积
-      4.3 归一化层选择
-      4.4 感受野计算
-    5. CNN 在 CV 中的应用
-      5.1 图像分类
-      5.2 目标检测
-      5.3 语义分割
-      5.4 实例分割
-    6. 参考文献
-```
-
 ## 目录
 
 1. [基本概念](#1)
@@ -119,21 +84,6 @@ $$H_{out} = \left\lfloor\frac{H_{in} + 2P - k_h}{S}\right\rfloor + 1$$
 ---
 
 ## 3. 经典架构演进
-
-<!-- chapter-timeline -->
-```arbor-timeline
-timeline
-    title CNN 架构演进
-    1998 : LeNet-5 确立卷积-池化-全连接
-    2012 : AlexNet 把深度卷积带上 ImageNet
-    2014 : VGG 的小卷积核与 GoogLeNet 的多尺度
-    2015 : ResNet 用残差连接把网络做深
-    2017 : DenseNet 密集复用特征
-    2018 : SENet 做通道注意力
-    2019 : EfficientNet 同时缩放深度、宽度和分辨率
-    2022 : ConvNeXt 用 Transformer 的经验改造 CNN
-```
-
 
 ### 3.1 LeNet-5 (1998)
 

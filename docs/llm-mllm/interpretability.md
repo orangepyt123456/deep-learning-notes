@@ -4,41 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((机制可解释性))
-    1. 概述
-    2. 探针方法
-      2.1 线性探针
-      2.2 探针的注意事项
-    3. 电路分析（Circuits）
-      3.1 什么是电路
-      3.2 分析工具
-      3.3 Induction Heads
-    4. 稀疏自编码器（SAE）
-      4.1 动机：多义性问题
-      4.2 SAE 原理
-      4.3 特征的可解释性
-      4.4 SAE 的扩展
-    5. 表征工程与 Steering
-      5.1 表征工程（Representation Engineering）
-      5.2 Steering Vectors
-      5.3 对比激活引导（CAA）
-      5.4 局限与风险
-    6. 因果追踪与归因
-      6.1 因果追踪（Causal Tracing）
-      6.2 归因图（Attribution Graphs）
-      6.3 函数视角（Logit Lens）
-    7. 实践建议
-    8. 参考文献
-```
-
 ## 目录
 
 1. [概述](#1)

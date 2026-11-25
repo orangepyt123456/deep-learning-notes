@@ -4,46 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((推荐系统与 CTR 模型))
-    1. 概述
-    2. 推荐系统架构
-      2.1 漏斗架构
-      2.2 特征体系
-      2.3 Embedding 表示
-    3. 经典深度 CTR 模型
-      3.1 演进路线
-      3.2 Wide & Deep（Google, 2016）
-      3.3 DeepFM（华为, 2017）
-      3.4 DCN / DCN-V2
-    4. 多目标学习
-      4.1 为什么需要多目标
-      4.2 MMoE
-      4.3 PLE
-      4.4 排序融合
-    5. 序列建模与用户行为
-      5.1 长序列建模
-      5.2 实时行为与会话
-      5.3 图神经网络推荐
-    6. 召回与粗排
-      6.1 召回方法
-      6.2 双塔模型
-      6.3 粗排
-    7. LLM 与推荐系统
-      7.1 LLM 的新能力
-      7.2 应用方式
-      7.3 挑战
-    8. 实践建议
-    9. 参考文献
-```
-
 ## 目录
 
 1. [概述](#1)
@@ -114,19 +74,6 @@ Embedding 表规模可达 TB 级（如用户数亿 × Embedding 维度 64），�
 ## 3. 经典深度 CTR 模型
 
 ### 3.1 演进路线
-
-<!-- chapter-timeline -->
-```arbor-timeline
-timeline
-    title 深度 CTR 模型演进
-    2010 : LR 与 FM 记住特征组合
-    2016 : Wide and Deep 同时要记忆和泛化
-    2017 : DeepFM 把 FM 和深度网络接到一起
-    2018 : DIN 按候选物品关注用户历史
-    2019 : DIEN 把兴趣随时间的变化建模进来
-    2020 年后 : SIM 与多目标、多塔结构
-```
-
 
 $$
 \text{LR} \rightarrow \text{FM/FFM} \rightarrow \text{Wide\&Deep} \rightarrow \text{DeepFM} \rightarrow \text{DIN} \rightarrow \text{DIEN} \rightarrow \text{SIM} \rightarrow \text{多目标/多塔}

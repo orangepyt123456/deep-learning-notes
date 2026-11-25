@@ -4,43 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((推理服务化与部署))
-    1. 部署概述
-      1.1 部署场景分类
-      1.2 部署流程
-    2. 模型导出格式
-      2.1 TorchScript
-      2.2 ONNX Open Neural Network Exchange
-      2.3 格式对比
-    3. 推理引擎
-      3.1 TensorRT
-      3.2 ONNX Runtime
-      3.3 OpenVINO
-      3.4 引擎选择
-    4. 服务化部署
-      4.1 Triton Inference Server
-      4.2 FastAPI 自建服务
-      4.3 部署方案对比
-    5. 性能优化
-      5.1 批处理策略
-      5.2 模型并发
-      5.3 请求优化
-      5.4 资源规划
-    6. 监控与运维
-      6.1 关键指标
-      6.2 监控工具
-      6.3 版本管理
-    7. 参考文献
-```
-
 ## 目录
 
 1. [部署概述](#1)

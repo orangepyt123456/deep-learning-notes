@@ -4,41 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((Agentic RAG：让 Age…))
-    1 概述
-    2 RAG 基础回顾
-    3 从被动 RAG 到 Agentic RAG
-      3.1 被动 RAG
-      3.2 Agentic RAG
-      3.3 优势
-    4 关键能力：查询改写与多轮检索
-      4.1 查询改写 Query Rewriting
-      4.2 子问题分解 Sub-question Decomposition
-      4.3 多轮检索
-    5 Self-RAG 与反思式检索
-      5.1 Self-RAG
-      5.2 反思式检索 Reflective RAG
-      5.3 FLARE
-    6 GraphRAG 与结构化知识
-      6.1 思路
-      6.2 优势
-      6.3 局限
-    7 实践模式
-      7.1 检索作为工具的实现
-      7.2 多源路由
-      7.3 与 ReAct 配合
-      7.4 性能与成本权衡
-    8 参考文献
-```
-
 ## 目录
 
 1. [概述](#1)

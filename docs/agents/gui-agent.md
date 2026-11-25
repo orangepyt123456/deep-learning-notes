@@ -4,40 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((GUI Agent 与 Compu…))
-    1 概述
-      1.1 工业意义
-    2 任务形式化
-      2.1 POMDP 视角
-      2.2 动作空间
-      2.3 屏幕 + DOM 双通道
-    3 关键技术
-      3.1 屏幕理解
-      3.2 元素定位 Grounding
-      3.3 行动预测
-      3.4 工具栈集成
-    4 代表系统
-      4.1 OpenAI Operator / CUA
-      4.2 Claude Computer Use
-      4.3 AutoGLM / AutoGLM-Chat
-      4.4 ScreenAgent / ScreenAgent-Pro
-    5 评测基准
-      5.1 评测指标
-    6 挑战与安全
-      6.1 技术挑战
-      6.2 安全挑战
-      6.3 工程实践
-    7 参考文献
-```
-
 ## 目录
 
 1. [概述](#1)

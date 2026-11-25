@@ -4,51 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((长上下文与检索增强生成))
-    1. 概述
-    2. 长上下文的核心挑战
-      2.1 位置编码外推
-      2.2 注意力计算复杂度
-      2.3 中间丢失（Lost in the Middle）
-      2.4 显存占用
-    3. 位置编码外推
-      3.1 位置插值（Position Interpolation, PI）
-      3.2 NTK-Aware 插值
-      3.3 YaRN
-      3.4 LongRoPE 与渐进式扩展
-    4. 高效注意力机制
-      4.1 Flash Attention
-      4.2 Ring Attention
-      4.3 稀疏注意力
-      4.4 KV Cache 压缩
-    5. RAG 基础架构
-      5.1 RAG 流水线
-      5.2 分块策略（Chunking）
-      5.3 稠密检索（Dense Retrieval）
-      5.4 向量数据库
-    6. 高级检索技术
-      6.1 Rerank（重排序）
-      6.2 查询改写
-      6.3 GraphRAG
-      6.4 Agentic RAG
-    7. 长上下文 vs RAG：取舍与融合
-      7.1 对比
-      7.2 融合策略
-    8. 实践建议
-      8.1 选型建议
-      8.2 RAG 优化清单
-      8.3 长上下文优化建议
-    9. 参考文献
-```
-
 ## 目录
 
 1. [概述](#1)

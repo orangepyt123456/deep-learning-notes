@@ -4,41 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((AI Agent 基础与核心循环))
-    1 概述
-      1.1 什么是 AI Agent
-      1.2 核心组件
-      1.3 单轮问答 vs 自主多步任务
-    2 核心循环与公式化
-      2.1 Perception-Planning-Action-Observation
-      2.2 形式化伪代码
-      2.3 状态机视角：感知—规划—行动—反思
-      2.4 上下文工程（context engineering）
-    3 ReAct 范式
-    4 规划范式总览
-      4.1 ReAct vs Plan-and-Execute：何时先规划
-      4.2 Reflexion：语言化的强化学习
-      4.3 树搜索：ToT 与 MCTS
-    5 Agent 工程决策点
-      5.1 模型选型
-      5.2 循环终止条件
-      5.3 错误恢复
-    6 失败模式与对策
-    7 Agent 评测
-      7.1 通用基准
-      7.2 评测指标
-      7.3 评测陷阱
-    8 参考文献
-```
-
 ## 目录
 
 1. [概述](#1)

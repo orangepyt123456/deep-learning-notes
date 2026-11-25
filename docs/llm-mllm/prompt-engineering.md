@@ -4,41 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((提示工程详解))
-    1. 概述
-      1.1 什么是提示工程
-      1.2 提示、RAG、微调的关系
-      1.3 提示工程的关键认知
-    2. 基础范式
-      2.1 Zero-shot 提示
-      2.2 Few-shot / In-Context Learning ICL
-      2.3 角色提示（Role Prompting）
-      2.4 指令清晰化
-    3. 进阶技巧
-      3.1 思维链（Chain-of-Thought, CoT）
-      3.2 自洽性（Self-Consistency）
-      3.3 ReAct（Reasoning + Acting）
-      3.4 提示技巧组合
-    4. 常见陷阱与防御
-      4.1 陷阱与对策表
-      4.2 提示注入（Prompt Injection）
-      4.3 越狱（Jailbreak）
-    5. 生产实践
-      5.1 结构化模板
-      5.2 迭代验证
-      5.3 固化与流水线集成
-      5.4 与微调的权衡
-    6. 参考文献
-```
-
 ## 目录
 
 1. [概述](#1)

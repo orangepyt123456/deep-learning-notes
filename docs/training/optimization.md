@@ -4,43 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((优化器详解))
-    1. 梯度下降基础
-      1.1 批量梯度下降 BGD
-      1.2 随机梯度下降 SGD
-      1.3 小批量梯度下降 Mini-batch SGD
-    2. SGD 与 Momentum
-      2.1 SGD 的问题
-      2.2 Momentum 动量法
-      2.3 Nesterov Accelerated Gradient NAG
-    3. 自适应学习率方法
-      3.1 AdaGrad
-      3.2 RMSprop
-      3.3 AdaDelta
-    4. Adam 及其变体
-      4.1 Adam
-      4.2 AdamW
-      4.3 Adam vs AdamW 核心区别
-      4.4 其他 Adam 变体
-    5. 学习率调度
-      5.1 常见调度策略
-      5.2 Warmup 的重要性
-      5.3 Cosine Annealing with Warmup
-    6. 优化器选择指南
-      6.1 按任务推荐
-      6.2 超参数调优建议
-      6.3 常见陷阱
-    7. 参考文献
-```
-
 ## 目录
 
 1. [梯度下降基础](#1)

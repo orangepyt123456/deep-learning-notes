@@ -56,12 +56,6 @@ markdown_extensions:
         - name: mermaid
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
-        - name: arbor-tree
-          class: arbor-tree
-          format: !!python/name:pymdownx.superfences.fence_code_format
-        - name: arbor-timeline
-          class: arbor-timeline
-          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.highlight:
       anchor_linenums: true
   - pymdownx.inlinehilite
@@ -88,13 +82,10 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js
   - javascripts/glossary-data.js
   - javascripts/glossary.js
-  - https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.min.js
-  - javascripts/arbor.js
 
 extra_css:
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css
   - stylesheets/glossary.css
-  - stylesheets/arbor.css
 
 nav:
   - 首页: index.md

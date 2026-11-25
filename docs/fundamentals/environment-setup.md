@@ -4,44 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((深度学习环境配置指南))
-    1. 硬件选择
-      1.1 GPU 推荐
-      1.2 其他硬件
-    2. 操作系统安装
-      安装后基础配置
-    3. GPU 驱动与 CUDA 安装
-      3.1 安装 NVIDIA 驱动
-      3.2 安装 CUDA Toolkit
-      3.3 安装 cuDNN
-      3.4 验证 CUDA 环境
-    4. Python 与 PyTorch 环境
-      4.1 使用 Conda 管理环境
-      4.2 安装 PyTorch
-      4.3 常用深度学习库
-      4.4 配置示例 requirements.txt
-    5. 开发环境配置
-      5.1 VS Code
-      5.2 Jupyter Lab
-      5.3 远程开发
-      5.4 Tmux 终端复用
-    6. Docker 环境
-      6.1 安装 Docker + NVIDIA Container Toolkit
-      6.2 使用 PyTorch Docker 镜像
-    7. 环境验证
-      7.1 GPU 可用性
-      7.2 性能测试
-      7.3 常见问题排查
-```
-
 ## 目录
 
 1. [硬件选择](#1)

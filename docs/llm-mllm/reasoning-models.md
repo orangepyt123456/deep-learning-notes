@@ -4,48 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((推理模型：CoT、o1 与 Dee…))
-    1. 推理模型概述
-      1.1 什么是推理模型
-      1.2 与普通 LLM 的核心区别
-      1.3 发展脉络
-    2. 思维链 Chain-of-Thought
-      2.1 Few-shot CoT
-      2.2 Zero-shot CoT
-      2.3 Self-Consistency
-      2.4 Tree-of-Thought
-    3. Test-time Compute Scaling
-      3.1 核心直觉
-      3.2 Scaling Law
-      3.3 搜索形式
-    4. o1 / R1 范式
-      4.1 OpenAI o1
-      4.2 DeepSeek-R1（开源可复现范式）
-      4.3 RL 训练循环
-    5. 奖励设计：ORM vs PRM
-      5.1 ORM Outcome Reward Model
-      5.2 PRM Process Reward Model
-      5.3 GRPO：组相对策略优化
-    6. 训练策略
-      6.1 奖励设计策略
-      6.2 冷启动（Cold Start）
-      6.3 训练数据
-      6.4 蒸馏策略
-    7. 评测与局限
-      7.1 主流评测基准
-      7.2 主要局限
-      7.3 未来方向
-    8. 参考文献
-```
-
 ## 目录
 
 1. [推理模型概述](#1)

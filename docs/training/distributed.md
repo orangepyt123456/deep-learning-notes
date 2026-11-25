@@ -4,45 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((分布式训练详解))
-    1. 分布式训练概述
-      1.1 为什么需要分布式训练
-      1.2 并行策略分类
-    2. 数据并行 DP/DDP
-      2.1 DataParallel DP
-      2.2 DistributedDataParallel DDP
-      2.3 梯度累积模拟大 Batch
-    3. 模型并行
-      3.1 张量并行 Tensor Parallelism
-      3.2 流水线并行 Pipeline Parallelism
-    4. 混合并行与 3D 并行
-      4.1 3D 并行 TP + PP + DP
-      4.2 3D 并行 + ZeRO
-      4.3 前沿并行策略（2024–2025）
-    5. ZeRO 优化 DeepSpeed
-      5.1 显存占用分析
-      5.2 ZeRO 三个阶段
-      5.3 ZeRO-Offload 与 ZeRO-Infinity
-      5.4 DeepSpeed 配置示例
-    6. 通信原语
-      6.1 常用集合通信操作
-      6.2 通信后端
-    7. 实战配置
-      7.1 单机多卡 DDP
-      7.2 多机多卡
-      7.3 FSDP Fully Sharded Data Parallel
-      7.4 大规模训练推荐方案
-    8. 参考文献
-```
-
 ## 目录
 
 1. [分布式训练概述](#1)

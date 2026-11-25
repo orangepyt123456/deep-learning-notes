@@ -2,38 +2,7 @@
 
 > 这一页只记录 2026 年已经核对过官方介绍的模型节点，用来补上 [技术演进史](../fundamentals/tech-evolution.md) 原先停在 2025 年的部分。没有核对到官方页面的型号不写进来。
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((2026 前沿更新))
-    这一年在改变什么
-    已核对的发布
-      GPT-5.4（2026 年 3 月）
-      GPT-5.5（2026 年 4 月 23 日）
-      DeepSeek-V4（2026 年 4 月 24 日）
-      Claude Opus 5（2026 年 7 月 24 日）
-      Gemini 4 Hydrogen（2026 年 11 月 12 日）
-    还没有写进本页的内容
-    和本站其他章节的关系
-```
-
 截止日期：2026 年 11 月 24 日。
-
-<!-- chapter-timeline -->
-```arbor-timeline
-timeline
-    title 2026 已核对的模型节点
-    2026-03 : GPT-5.4
-    2026-04 : GPT-5.5
-           : DeepSeek-V4
-    2026-07 : Claude Opus 5
-    2026-11 : Gemini 4 Hydrogen
-```
 
 ## 这一年在改变什么
 

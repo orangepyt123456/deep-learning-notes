@@ -4,45 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((Flow Matching 与 R…))
-    1 概念与动机
-    2 从 Diffusion 到 Continuous Normalizing Fl…
-      2.1 Continuous Normalizing Flow CNF
-      2.2 与生成模型的关系
-    3 Flow Matching 形式化
-      3.1 概率路径与速度场
-      3.2 Flow Matching 目标
-    4 Conditional Flow Matching
-      4.1 条件化简化
-      4.2 Conditional Flow Matching 目标
-      4.3 训练循环伪代码
-    5 与 Diffusion 的等价关系
-      5.1 速度场与分数函数
-      5.2 DDPM 重新解释
-      5.3 实用差异
-    6 Rectified Flow 与 Reflow
-      6.1 Rectified Flow
-      6.2 Reflow
-      6.3 工业意义
-    7 少步采样与蒸馏
-      7.1 ODE 求解器
-      7.2 蒸馏
-      7.3 渐进蒸馏
-    8 代表工作
-      8.1 学术
-      8.2 工业
-    9 实践建议
-    10 参考文献
-```
-
 ## 目录
 
 1. [概念与动机](#1)

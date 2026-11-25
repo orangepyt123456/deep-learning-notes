@@ -4,46 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((具身智能前沿专题))
-    1 分层规划 Hierarchical Planning
-      1.1 动机
-      1.2 SayCan（Google, 2022）
-      1.3 PaLM-E / RT-2 Chain
-      1.4 HiRT（Hierarchical Robot Transformer）
-    2 双系统 VLA
-      2.1 思路
-      2.2 代表工作
-      2.3 优势
-    3 视觉语言导航 VLN
-      3.1 任务定义
-      3.2 关键技术
-      3.3 代表模型
-      3.4 评测指标
-    4 Humanoid 与全身控制
-      4.1 行业焦点
-      4.2 全身控制 Whole-Body Control
-      4.3 VLA for Humanoid
-      4.4 挑战
-    5 灵巧操作
-      5.1 任务
-      5.2 代表工作
-      5.3 关键挑战
-    6 评测基准
-      6.1 模拟器基准
-      6.2 真机基准
-      6.3 指标
-    7 挑战与未来方向
-    8 参考文献
-```
-
 ## 目录
 
 1. [分层规划 (Hierarchical Planning)](#1)

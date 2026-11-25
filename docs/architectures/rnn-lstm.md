@@ -4,51 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((循环神经网络 RNN / LSTM…))
-    1. RNN 基础
-      1.1 核心思想
-      1.2 数学形式
-      1.3 时间反向传播 BPTT
-    2. LSTM 长短期记忆网络
-      2.1 核心思想
-      2.2 LSTM 结构
-      2.3 门控详解
-      2.4 为什么 LSTM 缓解梯度消失
-    3. GRU 门控循环单元
-      3.1 核心思想
-      3.2 GRU 结构
-      3.3 门控作用
-      3.4 LSTM vs GRU 对比
-    4. 双向 RNN
-      4.1 动机
-      4.2 结构
-      4.3 限制
-    5. 深度 RNN 与堆叠
-      5.1 多层 RNN
-      5.2 正则化技术
-    6. 序列到序列模型 Seq2Seq
-      6.1 架构
-      6.2 瓶颈问题
-    7. 注意力机制
-      7.1 Bahdanau Attention Additive Attention
-      7.2 Luong Attention Multiplicative Attent…
-      7.3 关键区别
-      7.4 注意力变体
-    8. RNN 的局限与 Transformer 的崛起
-      8.1 RNN 的根本局限
-      8.2 从 RNN 到 Transformer
-      8.3 RNN 仍然适用的场景
-    9. 参考文献
-```
-
 ## 目录
 
 1. [RNN 基础](#1-rnn)

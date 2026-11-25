@@ -4,49 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((LLM 推理优化详解))
-    1. 推理优化概述
-      1.1 推理的两个阶段
-      1.2 核心优化方向
-    2. KV Cache
-      2.1 为什么需要 KV Cache
-      2.2 显存占用
-      2.3 KV Cache 优化
-    3. Flash Attention
-      3.1 核心问题
-      3.2 Flash Attention 原理
-      3.3 Flash Attention 版本演进
-      3.4 使用方式
-    4. 模型量化
-      4.1 量化基础
-      4.2 量化方法分类
-      4.3 GPTQ
-      4.4 AWQ Activation-aware Weight Quantizat…
-    5. 推理框架
-      5.1 主流框架对比
-      5.2 vLLM
-      5.3 Continuous Batching
-    6. 投机解码 Speculative Decoding
-      6.1 核心思想
-      6.2 加速原理
-      6.3 常见实现
-      6.4 MLA 与 PD 分离（2024–2025 前沿）
-    7. 其他优化技术
-      7.1 算子融合
-      7.2 模型剪枝
-      7.3 模型蒸馏
-      7.4 高效解码策略
-    8. 参考文献
-```
-
 ## 目录
 
 1. [推理优化概述](#1)
@@ -126,16 +83,6 @@ $$\text{KV Cache 大小} = 2 \times \text{层数} \times n_{kv} \times \text{头
 3. **Recomputation**：反向传播时重新计算 Attention 矩阵，而非从 HBM 读取
 
 ### 3.3 Flash Attention 版本演进
-
-<!-- chapter-timeline -->
-```arbor-timeline
-timeline
-    title Flash Attention
-    2022 : v1 用分块和在线 softmax 避免写出整张注意力矩阵
-    2023 : v2 调整并行，减少非矩阵乘法开销
-    2024 : v3 针对 Hopper 做异步和 FP8
-```
-
 
 | 版本 | 改进 | 加速比 |
 |------|------|--------|

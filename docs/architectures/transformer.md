@@ -4,51 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((Transformer 架构详解))
-    1. 背景与动机
-    2. 整体架构
-    3. Self-Attention 机制
-      3.1 核心思想
-      3.2 Scaled Dot-Product Attention
-      3.3 计算复杂度
-      3.4 注意力可视化示例
-    4. Multi-Head Attention
-      4.1 动机
-      4.2 数学形式
-      4.3 实际意义
-    5. Positional Encoding
-      5.1 为什么需要位置编码
-      5.2 正弦位置编码
-      5.3 其他位置编码方案
-    6. Feed-Forward Network
-    7. 残差连接与 Layer Normalization
-      7.1 残差连接
-      7.2 Layer Normalization
-    8. Encoder 详解
-    9. Decoder 详解
-      9.1 Masked Self-Attention
-      9.2 Cross-Attention
-      9.3 自回归生成
-    10. 训练与推理
-      10.1 训练配置（论文 base 模型）
-      10.2 学习率调度
-      10.3 推理
-    11. Transformer 变体
-      11.1 Encoder-Only（BERT 系列）
-      11.2 Decoder-Only（GPT 系列）
-      11.3 Encoder-Decoder（T5 系列）
-      11.4 高效注意力变体
-    12. 参考文献
-```
-
 ## 目录
 
 1. [背景与动机](#1)
@@ -386,7 +341,6 @@ $$lr = d_{model}^{-0.5} \cdot \min(step\_num^{-0.5}, step\_num \cdot warmup\_ste
 
 ---
 
-
 ### 11.5 现代注意力与 KV 压缩（2023–2025）
 
 | 技术 | 核心思想 | 收益 |
@@ -408,7 +362,6 @@ $$lr = d_{model}^{-0.5} \cdot \min(step\_num^{-0.5}, step\_num \cdot warmup\_ste
 - **Jamba / Samba**：SSM 与 attention 的混合架构，兼顾长程建模与内容检索。
 
 这些模型在**超长上下文**与**低成本推理**场景正成为 Transformer 的重要补充方向。
-
 
 ## 12. 参考文献
 

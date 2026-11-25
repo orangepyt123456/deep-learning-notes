@@ -4,50 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((正则化技术详解))
-    1. 过拟合与正则化概述
-      1.1 过拟合的表现
-      1.2 偏差-方差权衡
-    2. 参数范数惩罚
-      2.1 L2 正则化 Weight Decay / Ridge
-      2.2 L1 正则化 Lasso
-      2.3 L2 vs L1 对比
-      2.4 Elastic Net
-    3. Dropout 系列
-      3.1 Dropout
-      3.2 Dropout 的改进变体
-      3.3 Dropout 使用建议
-    4. 归一化方法
-      4.1 Batch Normalization
-      4.2 Layer Normalization
-      4.3 其他归一化方法
-      4.4 Pre-Norm vs Post-Norm
-    5. 数据增强
-      5.1 图像增强
-      5.2 Mixup
-      5.3 CutMix
-      5.4 文本增强
-    6. 早停法 Early Stopping
-      6.1 原理
-      6.2 实现
-      6.3 与 L2 正则化的等价性
-    7. 标签平滑 Label Smoothing
-      7.1 动机
-      7.2 方法
-    8. 正则化策略选择
-      8.1 按架构推荐
-      8.2 调参建议
-    9. 参考文献
-```
-
 ## 目录
 
 1. [过拟合与正则化概述](#1)

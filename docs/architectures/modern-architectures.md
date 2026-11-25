@@ -4,40 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((现代架构演进：MoE、SSM 与注…))
-    1. 概述
-    2. 混合专家 MoE
-      2.1 稀疏门控思想
-      2.2 门控函数 Gating / Router
-      2.3 负载均衡辅助损失
-      2.4 代表性 MoE 模型
-    3. 状态空间模型 SSM 与 Mamba
-      3.1 连续状态空间模型
-      3.2 S4：结构化状态空间
-      3.3 Mamba 与选择性 SSM
-      3.4 硬件感知扫描
-    4. 注意力变体
-      4.1 Multi-Query Attention MQA
-      4.2 Grouped-Query Attention GQA
-      4.3 Multi-head Latent Attention MLA
-      4.4 线性注意力近似
-    5. 长上下文与位置编码扩展
-      5.1 RoPE 回顾
-      5.2 外推问题
-      5.3 位置插值 Position Interpolation
-      5.4 NTK-aware / Dynamic NTK
-    6. 架构选择指南
-    7. 参考文献
-```
-
 ## 目录
 
 1. [概述](#1)

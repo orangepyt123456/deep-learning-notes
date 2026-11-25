@@ -4,41 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((自监督学习：从对比学习到掩码建模))
-    1 概述：为什么要自监督
-    2 代理任务时代（2015–2018）
-    3 对比学习与 InfoNCE
-      3.1 核心思想
-      3.2 InfoNCE 损失
-    4 SimCLR / MoCo 工程化
-      4.1 SimCLR（Google, 2020）
-      4.2 MoCo v1–v3（Meta, 2020–2021）
-      4.3 对比学习的坍缩问题
-    5 非对称结构：BYOL 与 SimSiam
-      5.1 BYOL（DeepMind, 2020）
-      5.2 SimSiam（2021）
-    6 掩码建模：从 BERT 到 MAE
-      6.1 语言：BERT / GPT
-      6.2 图像：MAE（Meta, 2022）
-      6.3 对比 vs 掩码的哲学差异
-    7 蒸馏系：DINO / DINOv2
-      7.1 DINO（Meta, 2021）
-      7.2 DINOv2（Meta, 2023）
-    8 多模态自监督：CLIP
-    9 视频与机器人表征
-    10 方法对比与选型
-    11 实践建议
-    12 相关文档
-```
-
 ## 目录
 
 1. [概述：为什么要自监督](#1)

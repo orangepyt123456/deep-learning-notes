@@ -4,52 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((模型压缩技术详解))
-    1. 概述
-      1.1 为什么要压缩
-      1.2 四大手段
-    2. 定点数基础
-      2.1 浮点与定点表示
-      2.2 量化基本映射
-      2.3 对称量化示例
-      2.4 量化误差与粒度
-    3. 训练后量化 PTQ 与量化感知训练 QAT
-      3.1 PTQ Post-Training Quantization
-      3.2 QAT Quantization-Aware Training
-      3.3 PTQ vs QAT 对比
-    4. 权重量化方法精讲
-      4.1 GPTQ
-      4.2 AWQ
-      4.3 SmoothQuant
-      4.4 三者对比
-    5. 极致低比特
-      5.1 BitNet 与 1.58-bit
-      5.2 低比特的权衡
-    6. 剪枝 Pruning
-      6.1 非结构化剪枝
-      6.2 结构化剪枝
-      6.3 稀疏度与加速
-      6.4 非结构化 vs 结构化
-    7. 知识蒸馏 Knowledge Distillation
-      7.1 经典 KD Hinton et al., 2015
-      7.2 任务蒸馏 vs 特征蒸馏
-      7.3 白盒 vs 黑盒蒸馏
-      7.4 KD 损失伪代码
-    8. 组合策略与选择指南
-      8.1 典型压缩管线
-      8.2 场景选择决策表
-      8.3 选择要点
-    9. 参考文献
-```
-
 ## 目录
 
 1. [概述](#1)

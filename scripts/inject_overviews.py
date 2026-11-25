@@ -250,16 +250,7 @@ def insert_timeline(rel: str, md: str) -> str:
 
 
 def main():
-    changed = 0
-    for path in sorted(DOCS.rglob("*.md")):
-        rel = path.relative_to(ROOT).as_posix()
-        original = path.read_text(encoding="utf-8")
-        updated = insert_mindmap(original)
-        updated = insert_timeline(rel, updated)
-        if updated != original:
-            path.write_text(updated, encoding="utf-8", newline="\n")
-            changed += 1
-    print(f"updated {changed} markdown files")
+    print("mindmaps and timelines are no longer inserted")
 
 
 if __name__ == "__main__":

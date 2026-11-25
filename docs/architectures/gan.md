@@ -4,45 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((生成对抗网络 GAN 详解))
-    1. 核心思想
-      1.1 对抗博弈
-      1.2 损失函数
-    2. 数学原理
-      2.1 最优判别器
-      2.2 全局最优解
-      2.3 与 Jensen-Shannon 散度的关系
-      2.4 梯度消失问题
-    3. 训练过程与技巧
-      3.1 交替训练
-      3.2 训练技巧
-      3.3 常见问题
-    4. 经典变体
-      4.1 DCGAN 2015
-      4.2 WGAN / WGAN-GP 2017
-      4.3 StyleGAN / StyleGAN2 / StyleGAN3 2019…
-      4.4 BigGAN 2019
-    5. 条件 GAN 与可控生成
-      5.1 条件 GAN cGAN
-      5.2 常用条件注入方式
-    6. 评估指标
-      6.1 Inception Score IS
-      6.2 Fréchet Inception Distance FID
-      6.3 其他指标
-    7. GAN vs Diffusion Model
-      7.1 对比
-      7.2 现状
-    8. 参考文献
-```
-
 ## 目录
 
 1. [核心思想](#1)

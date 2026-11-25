@@ -2,19 +2,6 @@
 
 > 模型训得再好，服务的可用性与成本才决定它能不能活下来。
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((推理部署))
-    章节地图
-    学习建议
-```
-
 本章节覆盖模型离开训练集群后的完整落地链路：从单次推理的计算细节（Prefill/Decode、KV Cache、Continuous Batching），到服务化与集群部署（TensorRT、Triton、vLLM），到模型压缩（量化、剪枝、蒸馏）与端侧适配（llama.cpp、NPU），最后是应用层的 LLMOps（Prompt 管理、评估流水线、灰度发布）。阅读顺序建议从实现原理到服务化，再到压缩与端侧，最后看工程化。
 
 ## 章节地图

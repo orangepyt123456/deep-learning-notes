@@ -4,33 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((Sim-to-Real 与仿真器))
-    1 为什么需要 Sim-to-Real
-    2 仿真器生态
-    3 Sim-to-Real Gap 的成因
-    4 域随机化 Domain Randomization
-      4.1 参数示例
-      4.2 类型
-      4.3 收益与代价
-    5 域适应 Domain Adaptation
-      5.1 像素级适应
-      5.2 特征级适应
-      5.3 现实到仿真 Real-to-Sim
-    6 System Identification 与 Real-to-Sim
-    7 Real-in-the-Loop
-    8 实践配方
-    8.5 生成式世界模型与 Sim-to-Real 的新关系
-    9 参考文献
-```
-
 ## 目录
 
 1. [为什么需要 Sim-to-Real](#1)

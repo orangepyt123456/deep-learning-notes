@@ -35,6 +35,7 @@ npm-debug.log*
 # Site build output
 site/
 _site/
+scripts/.offline-cache/
 
 # OS
 .DS_Store

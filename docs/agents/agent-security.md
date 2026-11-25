@@ -4,43 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((Agent 安全与提示注入))
-    1 概述
-    2 Agent 的安全攻击面
-    3 提示注入：直接与间接
-      3.1 直接注入（Direct Prompt Injection）
-      3.2 间接注入（Indirect Prompt Injection）
-      3.3 注入的持久化
-    4 工具滥用与权限扩散
-      4.1 权限扩散（Permission Escalation）
-      4.2 常见滥用模式
-      4.3 最小权限原则
-    5 沙箱与执行边界
-      5.1 沙箱分层
-      5.2 逃逸风险
-      5.3 纵深防御
-    6 供应链与技能/插件风险
-      6.1 供应链攻击
-      6.2 防御
-    7 多 Agent 与系统级攻击
-      7.1 多 Agent 攻击面
-      7.2 防御
-    8 防御框架与 OWASP
-      8.1 OWASP Top 10 for LLM Applications
-      8.2 防御技术栈
-      8.3 Runtime Contract 思路
-    9 实践建议
-    10 参考文献
-```
-
 ## 目录
 
 1. [概述](#1)

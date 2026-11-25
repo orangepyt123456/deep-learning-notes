@@ -5,61 +5,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((大模型后训练（Post-Train…))
-    0. 一句话理解整篇论文
-    1. Introduction：为什么需要 Post-Training
-    2. Overview：Post-Training 的演化与数学基础
-      2.1 历史演化
-      2.2 PPO
-      2.3 RLHF
-      2.4 DPO
-    3. PoLMs for Fine-Tuning
-      3.1 Supervised Fine-Tuning
-      3.2 Instruction Tuning
-      3.3 Prefix / Prompt Tuning
-      3.4 Reinforcement Fine-Tuning
-    4. PoLMs for Alignment
-      4.1 RLHF
-      4.2 RLAIF
-      4.3 DPO
-    5. PoLMs for Reasoning
-      5.1 Self-Refine
-      5.2 Reasoning as MDP
-      5.3 Reasoning Reward
-      5.4 DeepSeek-R1 / R1-Zero
-    6. PoLMs for Efficiency
-      6.1 Quantization
-      6.2 Pruning
-      6.3 LoRA / PEFT
-      6.4 Knowledge Distillation
-    7. PoLMs for Integration and Adaptation
-      7.1 Multimodal Integration
-      7.2 Knowledge Editing vs RAG
-      7.3 Model Merging
-    8. Datasets
-      8.1 Human-Labeled
-      8.2 Distilled Data
-      8.3 Synthetic Data
-    9. Applications
-      9.1 Professional Domains
-      9.2 Technical Reasoning
-      9.3 Understanding and Interaction
-    10. Open Problems and Future Directions
-      10.1 Beyond Large-Scale RL
-      10.2 Scalability
-      10.3 Ethical Alignment and Bias
-      10.4 Multimodal Reasoning
-    11. Conclusion
-```
-
 ## 0. 一句话理解整篇论文
 
 整篇论文可以压缩成一条主线：
@@ -129,18 +74,6 @@ $$
 ## 2. Overview：Post-Training 的演化与数学基础
 
 ### 2.1 历史演化
-
-<!-- chapter-timeline -->
-```arbor-timeline
-timeline
-    title 后训练主线
-    2018 : 预训练后做任务微调
-    2022 : RLHF 用人类偏好改行为
-    2023 : DPO 直接优化成对偏好
-    2024 : 推理模型把强化学习用到长思维链
-    2025 : DeepSeek-R1 把这条路线公开到可复现
-```
-
 
 可以压缩为：
 

@@ -4,56 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((单目深度估计与 3D 视觉基础模型))
-    1 任务定义
-      1.1 Relative Depth vs Metric Depth
-      1.2 室内 vs 室外 vs 跨域
-      1.3 仿射不变性
-    2 评价指标
-    3 从 CNN 到 Transformer
-      3.1 早期 CNN
-      3.2 DPT（Vision Transformer for Dense Pred…
-      3.3 MiDaS
-      3.4 ZoeDepth
-    4 Depth Anything 系列
-      4.1 Depth Anything v1（2024）
-      4.2 Depth Anything v2（2025）
-      4.3 Metric Depth 变体
-      4.4 工程意义
-    5 Metric3D v2
-      5.1 动机
-      5.2 关键技术
-      5.3 输出形式
-      5.4 应用
-    6 关键技术
-      6.1 大规模伪标签
-      6.2 仿射不变损失
-      6.3 多数据集混合训练
-      6.4 跨域泛化
-    7 数据集
-      7.1 真实数据集
-      7.2 合成数据集
-      7.3 伪标签
-    8 应用
-      8.1 3D 重建
-      8.2 具身智能
-      8.3 自动驾驶
-      8.4 AR / VR
-    9 评测与基准
-      9.1 评测集
-      9.2 在线评测
-      9.3 评测陷阱
-    10 参考文献
-```
-
 ## 目录
 
 1. [任务定义](#1)

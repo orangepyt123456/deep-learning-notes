@@ -4,36 +4,6 @@
 > arXiv: **2505.04921v2**  
 > 版本日期：**2025-07-06**
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((大型多模态推理模型（LMRM）综述))
-    1. 论文到底在研究什么？
-    2. 整篇论文的核心路线图
-    3. Stage 1：感知驱动的模块化推理
-    4. Stage 2：Language-Centric Short Reasoni…
-    Multimodal Chain-of-Thought（MCoT）
-      4.1 Prompt-based MCoT：告诉模型“你要思考”
-      4.2 Structural Reasoning：规定模型“怎么思考”
-      4.3 Externally Augmented Reasoning：把部分推理交…
-    5. Stage 2 的本质：System-1
-    6. Stage 3：Language-Centric Long Reasoning
-    7. Cross-Modal Reasoning：不仅“看图”，还要“用图思考”
-    8. Multimodal-O1：用 Long CoT + Search 把推理做深
-      训练阶段
-      推理阶段
-    9. Multimodal-R1：用 RL 学习“应该怎么推理”
-      DPO
-      GRPO
-    10. O1 与 R1 的关键区别
-    11. Multimodal-R1 当前最大的瓶颈
-```
-
 这篇综述讨论的是一个很明确的问题：
 
 > **多模态大模型如何从“能看懂”走向“能推理”，再从“能推理”走向“能长期规划、调用工具并与环境交互”？**
@@ -1883,7 +1853,6 @@ Omni-modal
 
 **Perception, Reason, Think, and Plan: A Survey on Large Multimodal Reasoning Models**  
 arXiv:2505.04921v2, 2025.
-
 
 ---
 

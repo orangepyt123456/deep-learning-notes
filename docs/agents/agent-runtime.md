@@ -6,36 +6,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((Agent Runtime：Ope…))
-    摘要
-    1. 从“普通 Agent”开始理解
-      1.1 最简单的 Agent
-    2. OpenClaw 的定位
-    3. OpenClaw 总体架构
-    4. Gateway：OpenClaw 的控制平面
-    5. OpenClaw 的 Agent Runtime
-    6. Workspace：Agent 的持久化“人格与工作空间”
-    7. Session、Context 与 Memory 必须区分
-      7.1 Session
-      7.2 Context
-      7.3 Memory
-    8. OpenClaw Memory 架构
-    9. 为什么长期 Agent 必须做 Context Lifecycle Mana…
-    10. Tools、Skills 与 Plugins
-      10.1 Tool
-      10.2 Skill
-      10.3 Plugin
-    11. Multi-Agent：OpenClaw 的重要能力
-```
-
 ## 摘要
 
 OpenClaw 和 Hermes Agent 都已经超出了“LLM + Tool Calling”的简单 Agent 范畴。它们都试图解决一个更困难的问题：

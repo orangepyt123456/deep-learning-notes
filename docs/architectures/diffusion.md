@@ -4,40 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((扩散模型（Diffusion Mo…))
-    1. 核心思想
-    2. 前向扩散过程
-      2.1 单步加噪
-      2.2 任意时刻的解析形式（重参数化）
-    3. 反向生成过程与 ELBO
-      3.1 反向过程
-      3.2 ELBO 推导
-      3.3 可解析的高斯后验
-      3.4 两个高斯之间的 KL
-    4. 简化损失 L simple
-      推理（生成）
-    5. 网络与噪声调度
-      5.1 架构
-      5.2 方差调度
-    6. DDIM：确定性采样
-    7. Classifier-Free Guidance
-    8. Latent Diffusion 与 Stable Diffusion
-    9. Flow Matching / Rectified Flow
-      9.1 插值路径
-      9.2 训练目标
-      9.3 采样
-    10. 主流框架与库
-    11. 参考文献
-```
-
 ## 目录
 
 1. [核心思想](#1)

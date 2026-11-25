@@ -4,45 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((Agent 评测与基准))
-    1 概述
-    2 评测维度
-    3 通用 Agent 基准
-      3.1 AgentBench
-      3.2 GAIA
-      3.3 τ-bench（Tau-Bench）
-    4 代码 Agent 基准
-      4.1 SWE-bench
-      4.2 SWE-bench Multimodal / Multilingual
-      4.3 其他代码基准
-    5 工具调用与业务 Agent 基准
-      5.1 ToolBench
-      5.2 API-Bank / BFCL
-      5.3 企业/行业 Agent 基准
-    6 Web / 浏览器 Agent 基准
-      6.1 Mind2Web
-      6.2 WebArena
-      6.3 WebVoyager
-      6.4 BrowserGym / VBS
-    7 GUI / 设备 Agent 基准
-      7.1 OSWorld
-      7.2 AndroidWorld / AndroidArena
-      7.3 Mobile-Agent / 其他
-    8 评测方法与陷阱
-      8.1 判分方式
-      8.2 常见陷阱
-    9 实践建议
-    10 参考文献
-```
-
 ## 目录
 
 1. [概述](#1)

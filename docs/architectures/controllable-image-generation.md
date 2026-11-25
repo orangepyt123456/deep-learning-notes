@@ -4,47 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((可控图像生成))
-    1 概述
-    2 控制类型分类
-    3 空间控制：ControlNet / T2I-Adapter
-      3.1 ControlNet
-      3.2 Multi-ControlNet
-      3.3 T2I-Adapter
-      3.4 对比
-    4 风格与身份控制：IP-Adapter
-      4.1 思路
-      4.2 优势
-      4.3 IP-Adapter-FaceID
-      4.4 Plus / Plus V2 演进
-    5 主体一致性：InstantID / PhotoMaker / Leffa
-      5.1 InstantID
-      5.2 PhotoMaker
-      5.3 Leffa（CVPR 2025）
-      5.4 三者对比
-    6 编辑与姿态控制
-      6.1 局部编辑（Inpainting）
-      6.2 姿态控制
-      6.3 文本引导编辑
-    7 联合控制与 ComfyUI 工作流
-      7.1 多控制组合
-      7.2 ComfyUI / A1111 工作流
-      7.3 实用配置
-    8 评测指标
-      8.1 客观指标
-      8.2 主观指标
-      8.3 评测陷阱
-    9 参考文献
-```
-
 ## 目录
 
 1. [概述](#1)

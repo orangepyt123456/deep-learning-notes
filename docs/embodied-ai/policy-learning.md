@@ -4,47 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((策略学习：从行为克隆到离线 RL …))
-    1 行为克隆 BC
-      1.1 损失函数
-      1.2 两大顽疾
-    2 Diffusion Policy
-      2.1 思路
-      2.2 训练
-      2.3 优势
-      2.4 局限
-    3 Flow Matching Policy
-      3.1 思路
-      3.2 与 Diffusion Policy 的对比
-      3.3 代表工作
-    4 3D Diffusion Policy DP3
-      4.1 动机
-      4.2 效果
-      4.3 衍生工作
-    5 离线强化学习
-      5.1 设定与动机
-      5.2 CQL：保守 Q 学习
-      5.3 IQL：期望回归
-      5.4 序列建模视角：Decision Transformer
-    6 人干预 RL HIL-SERL
-      6.1 思路
-      6.2 优势
-      6.3 工程挑战
-    7 BC + RL 混合范式与 VLA 后训练
-      7.1 经典混合管线
-      7.2 VLA 的 RL 后训练（2024–2025 前沿）
-      7.3 奖励来源的谱系
-    8 参考文献
-```
-
 ## 目录
 
 1. [行为克隆 (BC)](#1)

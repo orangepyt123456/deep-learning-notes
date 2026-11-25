@@ -4,30 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((大模型推理实现详解：从 Trans…))
-    1. 什么是“大模型推理”
-    2. 推理的两个核心阶段：Prefill 与 Decode
-    3. Prefill 阶段
-    4. Transformer 层在 Prefill 中做什么
-    5. 为什么需要 KV Cache
-      KV Cache
-    6. KV Cache 的基本思想
-    7. KV Cache 的显存占用
-    8. MHA、MQA 与 GQA 为什么影响推理性能
-    9. Decode 阶段
-    10. Decode 的矩阵运算为什么很特殊
-    11. 为什么 LLM Decode 经常受显存带宽限制
-    12. 为什么需要 Batch
-```
-
 ## 目录
 
 1. [什么是“大模型推理”](#1)
@@ -2814,7 +2790,6 @@ model(input)
 [9] Y. Leviathan, M. Kalman, Y. Matias, *Fast Inference from Transformers via Speculative Decoding*, ICML, 2023.
 
 [10] B. Patel, et al., *Splitwise: Efficient Generative LLM Inference Using Phase Splitting*, ISCA, 2024.
-
 
 ## 关键词速查 {#kw}
 

@@ -4,52 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((世界模型 World Model))
-    1 概念与目标
-    2 Dreamer 系列
-      2.1 RSSM
-      2.2 DreamerV1 → V2 → V3 演进
-      2.3 想象训练
-    3 视频生成作为世界模型
-      3.1 趋势
-      3.2 正方观点
-      3.3 反方观点
-      3.4 共识
-    4 动作条件视频生成
-      4.1 GAIA-1 Wayve, 2024
-      4.2 UniSim Google, 2023
-      4.3 iVideoGPT 2024
-      4.4 GameNGen Google, 2024
-    5 大规模世界模型：Genie / Sora / Cosmos / V-JEPA …
-      5.1 Genie 2 / Genie 3（Google DeepMind）
-      5.2 Sora 2 与 World Simulator 叙事
-      5.3 NVIDIA Cosmos 平台
-      5.4 World Labs（李飞飞团队）
-    6 世界模型与决策
-      6.1 Model-Based RL
-      6.2 World-Model as Simulator
-      6.3 Hierarchical World Model
-      6.4 Imagination-Augmented Agents
-    7 世界模型与 VLA 融合
-      7.1 为什么 VLA 需要世界模型
-      7.2 融合范式
-      7.3 代表性方向
-      7.4 数据飞轮
-    8 评测与开放问题
-      8.1 评测维度
-      8.2 开放问题
-      8.3 趋势判断
-    9 参考文献
-```
-
 ## 目录
 
 1. [概念与目标](#1)
@@ -102,16 +56,6 @@ o_t ──► encoder ──► 拼接 ──► RSSM ──► h_t ──► de
 ```
 
 ### 2.2 DreamerV1 → V2 → V3 演进
-
-<!-- chapter-timeline -->
-```arbor-timeline
-timeline
-    title Dreamer 系列
-    2020 : DreamerV1 在隐空间里做强化学习
-    2022 : DreamerV2 改用离散隐变量
-    2023 : DreamerV3 用一套超参覆盖多种环境
-```
-
 
 - **DreamerV1**（ICLR 2020）：在 Atari 与 DeepMind Control 上首次证明"完全在隐空间做 RL"可行；
 - **DreamerV2**（ICLR 2022）：把高斯隐变量换成离散类别隐变量，在 Atari 上达到人类水平。骨干仍是 RSSM，不是换成了 Transformer；

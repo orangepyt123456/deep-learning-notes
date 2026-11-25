@@ -4,25 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((GE-Act 2.0：从零预训练与…))
-    论文速览
-    1 背景与问题
-    2 核心贡献
-    3 核心原理与方法详解
-    4 数据与训练
-    5 实验、结果与解读
-    6 精读要点与实践建议
-    7 局限与后续影响
-```
-
 ## 论文速览
 
 | 项目 | 内容 |
@@ -43,7 +24,6 @@ VLA 直接学习 observation-action 映射，但不显式要求理解场景将�
 
 现有 WAM 多继承预训练视频生成器，导致视觉生成、动作反演和共训练的 scaling 关系不清楚。GE-Act 2.0 选择从操作数据中从头预训练所有生成与动作组件。
 
-
 ---
 
 ## 2 核心贡献
@@ -55,7 +35,6 @@ VLA 直接学习 observation-action 映射，但不显式要求理解场景将�
 5. 提出 KASO（knowledge-aligned selective optimization），只选择与记录动作行为兼容的预测未来做监督；
 6. 在 100 个任务、20 个技能组上做无 per-task fine-tuning 的 zero-shot OOD 评测；
 7. 验证 300h 到 30000h co-training 数据的 scaling 规律。
-
 
 ---
 
@@ -97,7 +76,6 @@ $$
 
 预测的未来可能有多个合理结果，但录制动作只对应一个模式。KASO 采样多个候选未来，用当前 IDM 判断哪些与记录动作兼容，只对兼容候选施加端到端监督，避免模式平均。
 
-
 ---
 
 ## 4 数据与训练
@@ -109,7 +87,6 @@ $$
 - 评测任务包含 held-out scenes、backgrounds、lighting 和 object instances；
 - 不做 per-task fine-tuning，直接评估 pretrained checkpoint；
 - 比较 G1-OP 与 G2-90D 两种 embodiment。
-
 
 ---
 
@@ -125,7 +102,6 @@ $$
 - 对 object、color、shape、position 指代至少 90% trials 能正确 grounding；
 - 能遵循与已承诺行为或常规场景关联相冲突的显式指令。
 
-
 ---
 
 ## 6 精读要点与实践建议
@@ -137,7 +113,6 @@ $$
 - **失败与部署数据有价值**，尤其适合 IDM 预训练；
 - **实践建议**：zero-shot OOD 评测应固定任务、场景、光照和物体实例，避免 fine-tuning 掩盖预训练能力。
 
-
 ---
 
 ## 7 局限与后续影响
@@ -148,7 +123,6 @@ $$
 - KASO 增加采样和选择成本；
 - 主要验证机器人操作，导航与全身人形控制待扩展；
 - 世界视觉计划可检查，但物理误差仍需真实闭环校准。
-
 
 ---
 

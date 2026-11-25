@@ -4,49 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((LLM 微调技术详解))
-    1. 微调范式概述
-      1.1 微调的必要性
-      1.2 微调方法分类
-    2. 全量微调 Full Fine-Tuning
-      2.1 定义
-      2.2 资源需求
-      2.3 训练技巧
-    3. LoRA 及其变体
-      3.1 LoRA Low-Rank Adaptation
-      3.2 LoRA 配置参数
-      3.3 应用位置
-      3.4 QLoRA
-    4. Adapter 系列
-      4.1 标准 Adapter
-      4.2 Adapter 变体
-    5. Prefix/Prompt Tuning
-      5.1 Prefix Tuning
-      5.2 Prompt Tuning
-      5.3 P-Tuning v2
-    6. 指令微调 Instruction Tuning
-      6.1 定义
-      6.2 数据格式
-      6.3 常用数据集
-      6.4 训练模板
-    7. 对齐技术 RLHF/DPO
-      7.1 RLHF Reinforcement Learning from Huma…
-      7.2 DPO Direct Preference Optimization
-      7.3 其他对齐方法
-    8. 微调策略选择
-      8.1 决策流程
-      8.2 按场景推荐
-    9. 参考文献
-```
-
 ## 目录
 
 1. [微调范式概述](#1)

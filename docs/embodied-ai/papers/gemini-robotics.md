@@ -4,25 +4,6 @@
 
 ---
 
-
-<!-- chapter-mindmap -->
-## 本章导图
-
-先看这张图，再往下读。它只保留本章的标题骨架，节点名对应后文的小节。
-
-```arbor-tree
-mindmap
-  root((Gemini Robotics：把…))
-    论文速览
-    1 背景与问题
-    2 核心贡献
-    3 核心原理与方法详解
-    4 数据与训练
-    5 实验、结果与解读
-    6 精读要点与实践建议
-    7 局限与后续影响
-```
-
 ## 论文速览
 
 | 项目 | 内容 |
@@ -46,7 +27,6 @@ Gemini 2.0 已经具备多模态理解、长上下文与常识推理，但机器
 
 Google DeepMind 因此构建了 Gemini Robotics-ER 与 Gemini Robotics 两个层次。
 
-
 ---
 
 ## 2 核心贡献
@@ -58,7 +38,6 @@ Google DeepMind 因此构建了 Gemini Robotics-ER 与 Gemini Robotics 两个层
 5. 展示开箱即用的灵巧操作、语言泛化、视觉/指令/动作分布偏移鲁棒性；
 6. 通过 specialization 适配极高灵巧度、长程任务和全新机器人形态；
 7. 系统讨论 VLA 安全、风险与 responsible development。
-
 
 ---
 
@@ -96,7 +75,6 @@ $$
 
 本地 decoder 缓解大模型不能直接机载高频控制的矛盾。
 
-
 ---
 
 ## 4 数据与训练
@@ -108,7 +86,6 @@ $$
 - specialization 阶段用少量任务数据微调；
 - 支持新 form factor、新动作空间与新传感器适配；
 - 论文展示 zero-shot、in-context 和 specialized 三类能力。
-
 
 ---
 
@@ -127,7 +104,6 @@ $$
 - specialization 后，长程 lunch-box packing 达到 100% 成功率，若干困难任务平均约 79%；
 - 能适配全新机器人 embodiment。
 
-
 ---
 
 ## 6 精读要点与实践建议
@@ -137,7 +113,6 @@ $$
 - **动作块有效提高控制频率**：250ms 生成、块内 50Hz 执行；
 - **specialization 不等于放弃通用**：从通用 VLA 微调比 from scratch 更数据高效；
 - **安全必须与能力同步设计**，尤其在家庭和接触密集场景。
-
 
 ---
 
@@ -149,7 +124,6 @@ $$
 - 报告中的成功率依赖特定机器人和数据流程；
 - 与开源生态相比，研究可验证性有限；
 - 后续 Gemini Robotics 1.5 / ER 继续朝更通用和更强的空间推理发展。
-
 
 ---
 
