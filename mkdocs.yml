@@ -87,7 +87,7 @@ extra_css:
   - stylesheets/glossary.css
 
 nav:
-  - 预览: preview/ai-literature-atlas.md
+  - 预览: preview/arbor/index.html
   - 首页: index.md
   - 深度学习全景手册: fundamentals/panorama.md
   - 基础理论:

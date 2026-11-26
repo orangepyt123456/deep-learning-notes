@@ -16,6 +16,7 @@ const DOCS = join(ROOT, "docs");
 /** 有意不在 nav 中、但仍需发布的页面（如旧 URL 跳转） */
 const NAV_ORPHAN_ALLOW = new Set([
   "resources/ai-literature-atlas.md",
+  "preview/ai-literature-atlas.md",
 ]);
 
 function walk(dir, out = []) {
@@ -30,7 +31,7 @@ function walk(dir, out = []) {
 const config = readFileSync(CONFIG, "utf8");
 const navBlock = config.split(/\n(?=nav:\s*$)/m)[1] ?? "";
 const navPaths = new Set(
-  [...navBlock.matchAll(/:\s*([A-Za-z0-9_./-]+\.md)\s*$/gm)].map((m) => m[1])
+  [...navBlock.matchAll(/:\s*([A-Za-z0-9_./-]+\.(?:md|html))\s*$/gm)].map((m) => m[1])
 );
 
 const actual = new Set(
@@ -39,7 +40,12 @@ const actual = new Set(
 
 let failed = false;
 
-const missing = [...navPaths].filter((p) => !actual.has(p)).sort();
+const missing = [...navPaths].filter((p) => {
+  if (p.endsWith(".html")) {
+    return !statSync(join(DOCS, p)).isFile();
+  }
+  return !actual.has(p);
+}).sort();
 if (missing.length) {
   failed = true;
   console.error("✗ nav 引用了不存在的文档：");
