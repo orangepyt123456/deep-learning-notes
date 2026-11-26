@@ -106,7 +106,16 @@ input[type='range'] { accent-color: var(--accent); }
 .topbar nav button { font-size: 12px; color: var(--muted); position: relative; white-space: nowrap; }
 .topbar nav button:hover, .topbar nav .nav-active { color: var(--text); }
 .nav-active:after { content: ''; position: absolute; bottom: -1px; left: 0; right: 0; height: 2px; background: var(--accent); }
-.header-end { display: flex; align-items: center; gap: 20px; }
+.header-end {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: center;
+  row-gap: 2px;
+  max-width: min(520px, 40vw);
+}
 .edition { font-size: 9px; letter-spacing: 1.15px; color: var(--subtle); white-space: nowrap; }
 .edition i { display: inline-block; width: 3px; height: 3px; margin: 0 7px; vertical-align: middle; background: var(--subtle); border-radius: 50%; }
 .language { display: flex; gap: 5px; align-items: center; font-size: 11px; }
@@ -116,6 +125,17 @@ input[type='range'] { accent-color: var(--accent); }
 .theme-toggle { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border: 1px solid var(--line); border-radius: 50%; color: var(--muted); }
 .theme-toggle:hover { background: var(--panel-raised); color: var(--accent); border-color: var(--line-strong); }
 .source-link { display: flex; align-items: center; gap: 8px; white-space: nowrap; font-size: 11px; color: var(--secondary); }
+.source-link.notes-site-link {
+  flex: 1 1 100%;
+  justify-content: flex-end;
+  font-size: 33px;
+  line-height: 1.12;
+  letter-spacing: 0.02em;
+  gap: 10px;
+  padding: 2px 0 0;
+  color: var(--accent);
+}
+.source-link.notes-site-link svg { flex-shrink: 0; }
 .intro { display: flex; align-items: center; justify-content: space-between; gap: 26px; padding: 25px 31px 26px; }
 .eyebrow { font-size: 9px; letter-spacing: 2px; color: var(--muted); display: flex; align-items: center; gap: 8px; line-height: 1.6; }
 .live-dot { width: 5px; height: 5px; flex-shrink: 0; background: var(--green); border-radius: 50%; box-shadow: 0 0 8px color-mix(in srgb, var(--green) 25%, transparent); }
@@ -448,7 +468,8 @@ footer button { display: flex; align-items: center; gap: 8px; font-size: 10px; c
   .edition { display: none; }
   .topbar nav { gap: 22px; }
   .topbar nav button { font-size: 11px; }
-  .source-link { font-size: 10px; }
+  .source-link:not(.notes-site-link) { font-size: 10px; }
+  .source-link.notes-site-link { font-size: 30px; }
   .intro { padding: 23px 25px; gap: 20px; }
   .intro h1 { font-size: 29px; }
   .intro h1 em { display: block; font-size: 15px; margin: 7px 0 0; }
