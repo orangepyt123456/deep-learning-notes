@@ -90,6 +90,7 @@ extra_css:
   - stylesheets/ai-atlas.css
 
 nav:
+  - 预览: resources/ai-literature-atlas.md
   - 首页: index.md
   - 深度学习全景手册: fundamentals/panorama.md
   - 基础理论:
