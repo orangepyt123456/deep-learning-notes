@@ -1,0 +1,441 @@
+/* 核心文献图谱 — 背景与全站 Material 主题一致，仅 atlas 内部卡片与画布区使用浅底。 */
+.dl-atlas {
+  --dl-atlas-card: color-mix(in srgb, var(--md-default-fg-color) 6%, var(--md-default-bg-color));
+  --dl-atlas-border: var(--md-default-fg-color--lightest, rgba(0, 0, 0, 0.12));
+  --dl-atlas-muted: color-mix(in srgb, var(--md-default-fg-color) 55%, transparent);
+  margin: 0 0 2rem;
+  color: var(--md-default-fg-color);
+}
+
+.dl-atlas * {
+  box-sizing: border-box;
+}
+
+.md-typeset .dl-atlas h1,
+.md-typeset .dl-atlas h2 {
+  margin: 0;
+  font-weight: 700;
+  border: 0;
+}
+
+.dl-atlas-hero {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1.5rem;
+  align-items: end;
+  margin-bottom: 1.25rem;
+}
+
+.dl-atlas-kicker {
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dl-atlas-muted);
+  font-weight: 700;
+}
+
+.dl-atlas-hero h1 {
+  margin-top: 0.35rem;
+  font-size: clamp(1.65rem, 3vw, 2.35rem);
+  line-height: 1.2;
+}
+
+.dl-atlas-lead {
+  margin: 0.55rem 0 0;
+  max-width: 42rem;
+  color: var(--dl-atlas-muted);
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.dl-atlas-stats {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-end;
+}
+
+.dl-atlas-stat {
+  text-align: right;
+}
+
+.dl-atlas-stat strong {
+  display: block;
+  font-size: 2rem;
+  line-height: 1;
+  color: var(--md-primary-fg-color);
+}
+
+.dl-atlas-stat span {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--dl-atlas-muted);
+}
+
+.dl-atlas-shell {
+  display: grid;
+  grid-template-columns: minmax(12.5rem, 15rem) 1fr;
+  gap: 0;
+  border: 1px solid var(--dl-atlas-border);
+  border-radius: 0.85rem;
+  overflow: hidden;
+  background: var(--md-default-bg-color);
+  min-height: 34rem;
+}
+
+.dl-atlas-branches {
+  border-right: 1px solid var(--dl-atlas-border);
+  padding: 1rem 0.75rem;
+  background: var(--dl-atlas-card);
+}
+
+.dl-atlas-branches h2 {
+  padding: 0 0.4rem 0.65rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--dl-atlas-muted);
+  font-weight: 700;
+}
+
+.dl-atlas-branch {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: 100%;
+  margin: 0.15rem 0;
+  padding: 0.55rem 0.55rem;
+  border: 1px solid transparent;
+  border-radius: 0.55rem;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dl-atlas-branch:hover {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 8%, transparent);
+}
+
+.dl-atlas-branch.is-active {
+  border-color: color-mix(in srgb, var(--md-primary-fg-color) 35%, transparent);
+  background: color-mix(in srgb, var(--md-primary-fg-color) 12%, transparent);
+}
+
+.dl-atlas-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  flex-shrink: 0;
+}
+
+.dl-atlas-branch-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.dl-atlas-branch-name {
+  display: block;
+  font-size: 0.86rem;
+  font-weight: 650;
+  line-height: 1.25;
+}
+
+.dl-atlas-branch-en {
+  display: block;
+  margin-top: 0.1rem;
+  font-size: 0.68rem;
+  color: var(--dl-atlas-muted);
+  letter-spacing: 0.04em;
+}
+
+.dl-atlas-branch-count {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--dl-atlas-muted);
+}
+
+.dl-atlas-main {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.dl-atlas-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0.85rem;
+  border-bottom: 1px solid var(--dl-atlas-border);
+  background: var(--dl-atlas-card);
+}
+
+.dl-atlas-tabs {
+  display: inline-flex;
+  padding: 0.15rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--md-default-fg-color) 8%, var(--md-default-bg-color));
+}
+
+.dl-atlas-tab {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+  background: transparent;
+  color: var(--dl-atlas-muted);
+  font: inherit;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.dl-atlas-tab.is-active {
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.dl-atlas-search {
+  flex: 1;
+  min-width: 10rem;
+  max-width: 18rem;
+  padding: 0.4rem 0.65rem;
+  border: 1px solid var(--dl-atlas-border);
+  border-radius: 999px;
+  background: var(--md-default-bg-color);
+  color: inherit;
+  font: inherit;
+  font-size: 0.84rem;
+}
+
+.dl-atlas-year {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  color: var(--dl-atlas-muted);
+}
+
+.dl-atlas-year input[type="range"] {
+  width: 4.5rem;
+}
+
+.dl-atlas-toggles {
+  display: flex;
+  gap: 0.35rem;
+  margin-left: auto;
+}
+
+.dl-atlas-pill {
+  border: 1px solid var(--dl-atlas-border);
+  border-radius: 999px;
+  padding: 0.3rem 0.6rem;
+  background: var(--md-default-bg-color);
+  color: var(--dl-atlas-muted);
+  font: inherit;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.dl-atlas-pill.is-on {
+  border-color: color-mix(in srgb, var(--md-primary-fg-color) 40%, transparent);
+  color: var(--md-primary-fg-color);
+}
+
+.dl-atlas-stage {
+  position: relative;
+  flex: 1;
+  min-height: 26rem;
+  background: var(--md-default-bg-color);
+}
+
+.dl-atlas-panel {
+  position: absolute;
+  inset: 0;
+  display: none;
+}
+
+.dl-atlas-panel.is-active {
+  display: block;
+}
+
+.dl-atlas-canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.dl-atlas-overlay {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  padding: 0.85rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dl-atlas-tree-title {
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--dl-atlas-muted);
+  font-weight: 700;
+}
+
+.dl-atlas-tree-sub {
+  margin-top: 0.25rem;
+  font-size: 0.82rem;
+  color: var(--dl-atlas-muted);
+}
+
+.dl-atlas-node-count {
+  align-self: flex-start;
+  margin-top: auto;
+  font-size: 0.78rem;
+  color: var(--dl-atlas-muted);
+}
+
+.dl-atlas-zoom {
+  pointer-events: auto;
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.dl-atlas-zoom button {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--dl-atlas-border);
+  border-radius: 0.45rem;
+  background: var(--md-default-bg-color);
+  color: inherit;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.dl-atlas-timeline {
+  width: 100%;
+  height: 100%;
+}
+
+.dl-atlas-domains {
+  overflow: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 0.75rem;
+}
+
+.dl-atlas-domain {
+  border: 1px solid var(--dl-atlas-border);
+  border-radius: 0.65rem;
+  padding: 0.85rem;
+  background: var(--dl-atlas-card);
+}
+
+.dl-atlas-domain h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.dl-atlas-domain p {
+  margin: 0.45rem 0 0;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--dl-atlas-muted);
+}
+
+.dl-atlas-domain-meta {
+  margin-top: 0.6rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--md-primary-fg-color);
+}
+
+.dl-atlas-list {
+  overflow: auto;
+  padding: 0.5rem 0.85rem 1rem;
+  max-height: 100%;
+}
+
+.dl-atlas-list table {
+  width: 100%;
+  font-size: 0.82rem;
+}
+
+.dl-atlas-list th,
+.dl-atlas-list td {
+  padding: 0.35rem 0.4rem;
+  border-bottom: 1px solid var(--dl-atlas-border);
+  text-align: left;
+}
+
+.dl-atlas-list tr {
+  cursor: pointer;
+}
+
+.dl-atlas-list tr:hover td {
+  background: color-mix(in srgb, var(--md-primary-fg-color) 8%, transparent);
+}
+
+.dl-atlas-detail {
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 1px solid var(--dl-atlas-border);
+  border-radius: 0.65rem;
+  background: var(--dl-atlas-card);
+}
+
+.dl-atlas-detail[hidden] {
+  display: none !important;
+}
+
+.dl-atlas-detail h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.dl-atlas-detail-meta {
+  margin-top: 0.35rem;
+  font-size: 0.82rem;
+  color: var(--dl-atlas-muted);
+}
+
+.dl-atlas-detail-note {
+  margin: 0.65rem 0 0;
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 900px) {
+  .dl-atlas-hero {
+    grid-template-columns: 1fr;
+  }
+  .dl-atlas-stats {
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .dl-atlas-shell {
+    grid-template-columns: 1fr;
+  }
+  .dl-atlas-branches {
+    border-right: 0;
+    border-bottom: 1px solid var(--dl-atlas-border);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    padding: 0.75rem;
+  }
+  .dl-atlas-branches h2 {
+    width: 100%;
+  }
+  .dl-atlas-branch {
+    width: auto;
+    flex: 1 1 45%;
+  }
+}

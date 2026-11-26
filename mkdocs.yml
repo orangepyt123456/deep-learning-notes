@@ -81,10 +81,13 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js
   - javascripts/glossary.js
+  - javascripts/ai-atlas-data.js
+  - javascripts/ai-atlas.js
 
 extra_css:
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css
   - stylesheets/glossary.css
+  - stylesheets/ai-atlas.css
 
 nav:
   - 首页: index.md
@@ -252,6 +255,7 @@ nav:
       - LLM 应用工程（LLMOps）: deployment/llm-ops.md
   - 资源汇总:
       - 资源汇总: resources/index.md
+      - 核心文献图谱: resources/ai-literature-atlas.md
       - 常用工具命令: resources/tools.md
       - 常用数据集: resources/datasets.md
       - 学习资源: resources/learning-resources.md
