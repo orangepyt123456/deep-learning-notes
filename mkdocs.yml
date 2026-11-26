@@ -90,7 +90,7 @@ extra_css:
   - stylesheets/ai-atlas.css
 
 nav:
-  - 预览: resources/ai-literature-atlas.md
+  - 预览: preview/ai-literature-atlas.md
   - 首页: index.md
   - 深度学习全景手册: fundamentals/panorama.md
   - 基础理论:
@@ -256,7 +256,6 @@ nav:
       - LLM 应用工程（LLMOps）: deployment/llm-ops.md
   - 资源汇总:
       - 资源汇总: resources/index.md
-      - 核心文献图谱: resources/ai-literature-atlas.md
       - 常用工具命令: resources/tools.md
       - 常用数据集: resources/datasets.md
       - 学习资源: resources/learning-resources.md

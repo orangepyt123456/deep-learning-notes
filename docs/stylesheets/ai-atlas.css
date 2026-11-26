@@ -1,5 +1,13 @@
 /* 核心文献图谱 — Arbor Atlas 视觉语言（独立于全站 Material 的 atlas 区块） */
 
+body.dl-atlas-active .md-sidebar--primary {
+  display: none !important;
+}
+
+body.dl-atlas-active .md-content {
+  margin-left: 0;
+}
+
 body.dl-atlas-active .md-main__inner {
   max-width: none;
 }
