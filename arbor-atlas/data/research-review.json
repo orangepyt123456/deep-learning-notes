@@ -1,0 +1,81 @@
+{
+  "checkedAt": "2026-11-26",
+  "scope": {
+    "surveyNodes": 0,
+    "researchAdditions": 265,
+    "totalNodes": 265,
+    "baselineNodes": 0,
+    "newNodes": 265,
+    "baselineSurveyNodes": 0,
+    "domains": 8,
+    "coverage": "1958–2025",
+    "exhaustive": false,
+    "domainCounts": {
+      "learning": 38,
+      "architectures": 52,
+      "training": 16,
+      "generative": 35,
+      "language": 44,
+      "vision": 45,
+      "agents": 17,
+      "embodied": 18
+    },
+    "relationships": 0,
+    "baselineRelationships": 0
+  },
+  "findings": [
+    {
+      "domain": "learning",
+      "zh": "从感知机、SVM 与 boosting，到深度表征、正则化、对比学习与泛化理论。",
+      "en": "From perceptrons and SVMs to deep representation learning, regularization, contrastive learning and generalization."
+    },
+    {
+      "domain": "architectures",
+      "zh": "CNN、RNN、Transformer、GNN、ViT、MoE 与 Mamba 等主干网络演进。",
+      "en": "CNN, RNN, Transformer, GNN, ViT, MoE and Mamba lineages."
+    },
+    {
+      "domain": "training",
+      "zh": "优化器、混合精度、分布式训练、缩放法则与推理侧效率工程。",
+      "en": "Optimizers, mixed precision, distributed training, scaling laws and inference efficiency."
+    },
+    {
+      "domain": "generative",
+      "zh": "GAN、VAE、扩散、流匹配与潜空间生成式建模主线。",
+      "en": "GAN, VAE, diffusion, flow matching and latent generative modeling."
+    },
+    {
+      "domain": "language",
+      "zh": "预训练、对齐、RAG、开源大模型与推理时计算。",
+      "en": "Pre-training, alignment, RAG, open LLMs and test-time compute."
+    },
+    {
+      "domain": "vision",
+      "zh": "检测分割、CLIP、多模态与视觉基础模型。",
+      "en": "Detection, segmentation, CLIP, multimodal and vision foundation models."
+    },
+    {
+      "domain": "agents",
+      "zh": "ReAct、工具调用、编程智能体与评测基准。",
+      "en": "ReAct, tool use, coding agents and evaluation benchmarks."
+    },
+    {
+      "domain": "embodied",
+      "zh": "强化学习、VLA、世界模型与机器人基础模型。",
+      "en": "RL, VLA, world models and robotics foundation models."
+    }
+  ],
+  "detailedFindings": [],
+  "reviewBatches": [
+    {
+      "checkedAt": "2026-11-26",
+      "label": "CS/AI core literature import"
+    }
+  ],
+  "sources": [
+    {
+      "title": "深度学习笔记 · 核心文献图谱",
+      "url": "https://orangepyt123456.github.io/deep-learning-notes/preview/arbor/"
+    }
+  ]
+}

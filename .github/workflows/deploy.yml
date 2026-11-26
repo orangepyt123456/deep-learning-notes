@@ -29,7 +29,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "24"
           cache: npm
 
       - name: Install Python deps
@@ -43,6 +43,15 @@ jobs:
 
       - name: Check nav/document consistency
         run: node scripts/check_nav.mjs
+
+      - name: Build ARBOR atlas (SciAporia UI + CS/AI data)
+        run: |
+          python scripts/convert_dl_atlas_to_arbor.py
+          cd arbor-atlas
+          npm ci
+          npm run build
+          mkdir -p ../docs/preview/arbor
+          cp -r dist/* ../docs/preview/arbor/
 
       - name: Build docs site
         run: mkdocs build --strict --site-dir _site

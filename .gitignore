@@ -30,6 +30,8 @@ env/
 
 # Node
 node_modules/
+vendor/
+arbor-atlas/dist/
 npm-debug.log*
 
 # Site build output

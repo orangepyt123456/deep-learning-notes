@@ -81,13 +81,10 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js
   - javascripts/glossary.js
-  - javascripts/ai-atlas-data.js
-  - javascripts/ai-atlas.js
 
 extra_css:
   - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css
   - stylesheets/glossary.css
-  - stylesheets/ai-atlas.css
 
 nav:
   - 预览: preview/ai-literature-atlas.md
