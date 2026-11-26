@@ -1,7 +1,7 @@
 #dl-glossary-pop {
   position: absolute;
   z-index: 1000;
-  width: min(22rem, calc(100vw - 1.5rem));
+  width: min(28rem, calc(100vw - 1.5rem));
   padding: 0.85rem 0.95rem 0.7rem;
   border-radius: 0.7rem;
   background: var(--md-default-bg-color, #fff);
@@ -36,22 +36,71 @@
 
 #dl-glossary-pop .dl-g-plain {
   margin-top: 0.45rem;
+  max-height: min(16rem, 45vh);
+  overflow: auto;
   font-size: 0.92rem;
   line-height: 1.55;
+  white-space: pre-wrap;
 }
 
-#dl-glossary-pop .dl-g-go {
-  display: inline-block;
-  margin-top: 0.75rem;
-  padding: 0.35rem 0.7rem;
+#dl-glossary-pop .dl-g-key {
+  margin-top: 0.55rem;
+}
+
+#dl-glossary-pop .dl-g-key p {
+  margin: 0;
+  font-size: 0.84rem;
+  line-height: 1.5;
+}
+
+#dl-glossary-pop .dl-g-key input {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 0.55rem;
+  padding: 0.4rem 0.55rem;
+  border: 1px solid var(--md-default-fg-color--lightest, rgba(0, 0, 0, 0.16));
+  border-radius: 0.4rem;
+  background: var(--md-default-bg-color, #fff);
+  color: inherit;
+  font: inherit;
+}
+
+#dl-glossary-pop .dl-g-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.6rem;
+}
+
+#dl-glossary-pop .dl-g-actions button,
+#dl-glossary-pop .dl-g-change {
+  border: 0;
   border-radius: 999px;
   background: var(--md-primary-fg-color, #4051b5);
   color: #fff;
+  font: inherit;
   font-size: 0.84rem;
   font-weight: 650;
-  text-decoration: none;
+  cursor: pointer;
 }
 
-#dl-glossary-pop .dl-g-go[hidden] {
+#dl-glossary-pop .dl-g-actions button {
+  padding: 0.35rem 0.7rem;
+}
+
+#dl-glossary-pop .dl-g-actions a {
+  font-size: 0.84rem;
+}
+
+#dl-glossary-pop .dl-g-change {
+  margin-top: 0.65rem;
+  padding: 0.2rem 0.55rem;
+  background: transparent;
+  color: var(--md-primary-fg-color, #4051b5);
+}
+
+#dl-glossary-pop .dl-g-key[hidden],
+#dl-glossary-pop .dl-g-plain[hidden],
+#dl-glossary-pop .dl-g-change[hidden] {
   display: none;
 }
