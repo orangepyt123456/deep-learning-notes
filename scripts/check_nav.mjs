@@ -13,6 +13,11 @@ const ROOT = process.cwd();
 const CONFIG = join(ROOT, "mkdocs.yml");
 const DOCS = join(ROOT, "docs");
 
+/** 有意不在 nav 中、但仍需发布的页面（如旧 URL 跳转） */
+const NAV_ORPHAN_ALLOW = new Set([
+  "resources/ai-literature-atlas.md",
+]);
+
 function walk(dir, out = []) {
   for (const name of readdirSync(dir)) {
     const p = join(dir, name);
@@ -41,7 +46,9 @@ if (missing.length) {
   for (const p of missing) console.error(`  - docs/${p}`);
 }
 
-const orphans = [...actual].filter((p) => !navPaths.has(p)).sort();
+const orphans = [...actual]
+  .filter((p) => !navPaths.has(p) && !NAV_ORPHAN_ALLOW.has(p))
+  .sort();
 if (orphans.length) {
   failed = true;
   console.error("✗ 以下文档未登记到 mkdocs.yml 的 nav（站点上不可见）：");
